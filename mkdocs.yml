@@ -1,0 +1,24 @@
+---
+site_name: "Reference Docs"
+site_description: A place to collaborate on reference architectures, reference frameworks, reference methodologie and ...
+nav:
+  - Home: "index.md"
+
+
+repo_url: https://github.com/Network-Automation-Forum/reference
+repo_name: Network-Automation-Forum/reference
+
+theme:
+  name: material
+  logo: img/NAF.png
+  favicon: img/favicon.png
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+  features:
+    - navigation.tracking
+extra:
+  homepage: https://networkautomation.forum/
+extra_css:
+  - stylesheets/extra.css

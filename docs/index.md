@@ -1,0 +1,9 @@
+# Welcome to NAF Reference
+
+A place to collaborate on reference architectures, reference frameworks, reference methodologies, just stuff to reference...
+
+## TBD...
+
+More info as we get going, for now...
+
+...Go nuts.
