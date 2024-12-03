@@ -23,11 +23,3 @@ extra:
   homepage: https://networkautomation.forum/
 extra_css:
   - stylesheets/extra.css
-
-plugins:
-  - "include-markdown"
-
-markdown_extensions:
-  - "admonition"
-  - "pymdownx.details"
-  - "pymdownx.superfences"
