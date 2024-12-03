@@ -1,8 +1,9 @@
 ---
 site_name: "Reference Docs"
-site_description: A place to collaborate on reference architectures, reference frameworks, reference methodologie and ...
+site_description: A place to collaborate on reference architectures, reference frameworks, reference methodologies, just stuff to reference...
 nav:
   - Home: "index.md"
+  - NetDevOps Primer: "NetDevOpsPrimer/NetDevOpsPrimer.md"
 
 
 repo_url: https://github.com/Network-Automation-Forum/reference
