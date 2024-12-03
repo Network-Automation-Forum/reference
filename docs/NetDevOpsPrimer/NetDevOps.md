@@ -54,3 +54,5 @@ Here’s a quick recap of what you need for a successful NetDevOps practice:
 - **Operational Toolkit**: Monitor, report, and troubleshoot effectively.
 
 By embracing NetDevOps, you can transform your network operations, making them more efficient, reliable, and scalable. It's time to take the leap and bring the power of DevOps to your networking domain.
+
+- [Back: Intent Based Networking (IBN)](IBN.md)

@@ -32,3 +32,6 @@ Moving back into the world of networking, an IBN-style centralized management pl
 Another way to think about IBN is as the convergence of SDN, automation, orchestration, closed-loop feedback, validation, and IaC. In other words, an IBN is a network that applies everything we’ve learned so far to design, build, operate, and upgrade the network as a distributed system providing connectivity how and where needed across your business. In this context IBN is the most modern evolution of network operations methodologies, and the ultimate evolution of many of the ideas born with SDN.
 
 The multi-vendor management plane provided by IBN allows for repeatable and assured operations, which ultimately leads to a more reliable network and a faster time to market for new network enabled products and services.
+
+- [Back: Infrastructure as Code (IaC)](IaC.md)
+- [Next: NetDevOps](NetDevOps.md)

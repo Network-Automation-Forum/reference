@@ -13,3 +13,6 @@ Of course, providing these automation tools to more junior staff isn’t just fo
 This is the promise of automation. Compounding the skills on your team to do more work with the same number of people by delegating as much as possible to the bots. An added benefit, when done right, is the reduction (and ultimate elimination) of downtime caused by human error. 
 
 These promises are not always delivered though. Complete network automation is a massive undertaking, often involving thousands or tens of thousands of individual components (interfaces, vlans, protocols, devices, etc.). Failed or broken automation can create nightmarish “fail at scale” scenarios, where a bad change is propagated across a large network in an instant, sometimes causing massive outages. And building and coordinating the needed automations is still a manual task, although one with much greater leverage than device by device operations.
+
+- [Back: Software Defined Networking (SDN)](SDN.md) 
+- [Next: Orchestration](Orchestration.md)

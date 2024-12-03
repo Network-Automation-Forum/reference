@@ -27,3 +27,6 @@ Second, disaggregation allows you to run these functions purely as software with
 The upshot is that virtualized network functions (VNFs) can be run exactly where you need them, with whatever resources (compute/memory/storage) needed, often independent of specific physical devices. While we will always need hardware switches to push packets physically around the network, in most cases it is more efficient to move network software into discrete functions. Among the benefits already mentioned, this allows us to limit our attack surface (by not running features or functions that are not required) and enables easier upgrades (by separating the bits needing to be upgraded). It can also allow us to use the same software for these functions whether they are instantiated on physical network devices, within our own virtualized or containerized environments, or across public cloud infrastructure.
 
 Just as network virtualization abstracts our network topology from the physical network connections, NFV abstracts our network architecture from the physical network devices.
+
+- [Back: Network Virtualization](NetworkVirtualization.md)
+- [Next: Infrastructure as Code (IaC)](IaC.md)

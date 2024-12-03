@@ -29,3 +29,6 @@ The third and final axis of network validation scope is when it takes place. Her
 You can have validation without automation. But they complement each other very well. This combination can work in two ways. The one that you may already be guessing at is using validation to control automation (and orchestration). This is using validation as a feedback mechanism to influence the actions of your automated and orchestrated network control system. We’ll look at this in more detail in the IBN section, below.
 
 The other way to combine automation and validation is to automate your validation. Applying the tenets and tactics of automation and orchestration to network validation can ensure that you always know what you need to know. That means that errors are caught sooner, often even before they are made. This automated validation can of course be used to tame your orchestrated network control system as an enhanced feedback mechanism. It can also be used to inform you, the network operations teams, and anyone else in the business who might need to know the current (or past) state of the network. In either case, it is a direct antecedent to network observability.
+
+- [Back: Feedback](Feedback.md)
+- [Next: Network Observability](NetworkObservability.md)
