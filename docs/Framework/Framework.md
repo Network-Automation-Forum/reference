@@ -16,7 +16,69 @@ Moreover, all the blocks MAY be implemented by one or more components as needed.
 
 The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.
 
-![pic](./images/arch.png)
+```mermaid
+block-beta
+    columns 5
+    
+	space
+    block:layer1:5
+        Presentation["Presentation"]
+    end
+
+    space:5
+
+    
+    block:Observability:1
+        columns 2
+        ObsLabel["Observability"]:2
+        ObservedState[("Observed State")]:1
+        ObservedLogic["Observed Logic"]:1
+    end
+	space
+    
+    %% Orchestration["Orchestration"]:1
+	block:Orchestration:1
+		columns 1
+		OrchLabel["Orchestration"]:1
+	end
+	space
+    
+    block:Intent:1
+        columns 2
+        IntLabel["Intent"]:2
+        IntendedState[("Intended State")]:1
+        IntendedLogic["Intended Logic"]:1
+    end
+    
+	space:5
+    
+
+	space
+    Collector["Collector"]:2
+	space
+    Executor["Executor"]:2
+	space:5
+	space
+    
+    block:layer4:5
+        NetworkInfra["Network Infrastructure"]
+    end
+    
+    Presentation <--> Observability
+    Presentation <--> Orchestration
+    Presentation <--> Intent
+    
+    Observability <--> Orchestration
+    Orchestration <--> Intent
+    
+    Collector --> Observability
+    Collector <--> Orchestration
+	NetworkInfra --> Collector
+    
+    Orchestration --> Executor
+    Intent --> Executor
+    Executor --> NetworkInfra
+```
 
 
 - Intent: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
