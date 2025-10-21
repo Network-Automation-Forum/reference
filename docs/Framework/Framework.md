@@ -18,47 +18,52 @@ The proposed reference architecture defines six major functional building blocks
 
 ```mermaid
 block-beta
-    columns 5
+    columns 7
     
-	space
+	space:1	
     block:layer1:5
         Presentation["Presentation"]
     end
+	space:1
 
-    space:5
+    space:7
 
     
-    block:Observability:1
+    block:Observability:2
         columns 2
-        ObsLabel["Observability"]:2
+        %% ObsLabel["Observabilit"]:2
         ObservedState[("Observed State")]:1
         ObservedLogic["Observed Logic"]:1
     end
+
 	space
     
-    %% Orchestration["Orchestration"]:1
 	block:Orchestration:1
 		columns 1
 		OrchLabel["Orchestration"]:1
 	end
+
 	space
     
-    block:Intent:1
+    block:Intent:2
         columns 2
-        IntLabel["Intent"]:2
+        %% IntLabel["Intent"]:2
         IntendedState[("Intended State")]:1
         IntendedLogic["Intended Logic"]:1
     end
     
-	space:5
-    
+    space:7
 
 	space
+
+    
     Collector["Collector"]:2
 	space
     Executor["Executor"]:2
-	space:5
 	space
+    
+	space:7
+	space:1
     
     block:layer4:5
         NetworkInfra["Network Infrastructure"]
@@ -78,6 +83,10 @@ block-beta
     Orchestration --> Executor
     Intent --> Executor
     Executor --> NetworkInfra
+    
+    classDef darkStyle fill:#3a4149,stroke:#4a9eff,stroke-width:2px,color:#e8e8e8,font-size:20px,font-weight:bold
+    
+    class Presentation,NetworkInfra,ObsLabel,IntLabel,Collector,Executor,ObservedState,ObservedLogic,IntendedState,IntendedLogic,OrchLabel darkStyle
 ```
 
 
