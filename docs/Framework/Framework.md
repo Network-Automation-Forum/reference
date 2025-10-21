@@ -16,7 +16,78 @@ Moreover, all the blocks MAY be implemented by one or more components as needed.
 
 The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.
 
-![pic](./images/arch.png)
+```mermaid
+block-beta
+    columns 7
+    
+	space:1	
+    block:layer1:5
+        Presentation["Presentation"]
+    end
+	space:1
+
+    space:7
+
+    
+    block:Observability:2
+        columns 2
+        %% ObsLabel["Observabilit"]:2
+        ObservedState[("Observed State")]:1
+        ObservedLogic["Observed Logic"]:1
+    end
+
+	space
+    
+	block:Orchestration:1
+		columns 1
+		OrchLabel["Orchestration"]:1
+	end
+
+	space
+    
+    block:Intent:2
+        columns 2
+        %% IntLabel["Intent"]:2
+        IntendedState[("Intended State")]:1
+        IntendedLogic["Intended Logic"]:1
+    end
+    
+    space:7
+
+	space
+
+    
+    Collector["Collector"]:2
+	space
+    Executor["Executor"]:2
+	space
+    
+	space:7
+	space:1
+    
+    block:layer4:5
+        NetworkInfra["Network Infrastructure"]
+    end
+    
+    Presentation <--> Observability
+    Presentation <--> Orchestration
+    Presentation <--> Intent
+    
+    Observability <--> Orchestration
+    Orchestration <--> Intent
+    
+    Collector --> Observability
+    Collector <--> Orchestration
+	NetworkInfra --> Collector
+    
+    Orchestration --> Executor
+    Intent --> Executor
+    Executor --> NetworkInfra
+    
+    classDef darkStyle fill:#3a4149,stroke:#4a9eff,stroke-width:2px,color:#e8e8e8,font-size:20px,font-weight:bold
+    
+    class Presentation,NetworkInfra,ObsLabel,IntLabel,Collector,Executor,ObservedState,ObservedLogic,IntendedState,IntendedLogic,OrchLabel darkStyle
+```
 
 
 - Intent: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.

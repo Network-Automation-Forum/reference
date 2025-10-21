@@ -24,3 +24,16 @@ extra:
   homepage: https://networkautomation.forum/
 extra_css:
   - stylesheets/extra.css
+markdown_extensions:
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        # Mermaid diagrams
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - optionalConfig.js
+  - https://cdn.jsdelivr.net/npm/mermaid@11.5.0/dist/mermaid.min.js
+  - extra-loader.js
