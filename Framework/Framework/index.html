@@ -1,0 +1,743 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A place to collaborate on reference architectures, reference frameworks, reference methodologies, just stuff to reference...">
+      
+      
+      
+      
+        <link rel="prev" href="../../NetDevOpsPrimer/NetDevOpsPrimer/">
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.13">
+    
+    
+      
+        <title>NAF Framework - Reference Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-naf-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://networkautomation.forum/" title="Reference Docs" class="md-header__button md-logo" aria-label="Reference Docs" data-md-component="logo">
+      
+  <img src="../../img/NAF.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Reference Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NAF Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Network-Automation-Forum/reference" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Network-Automation-Forum/reference
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://networkautomation.forum/" title="Reference Docs" class="md-nav__button md-logo" aria-label="Reference Docs" data-md-component="logo">
+      
+  <img src="../../img/NAF.png" alt="logo">
+
+    </a>
+    Reference Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Network-Automation-Forum/reference" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Network-Automation-Forum/reference
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetDevOpsPrimer/NetDevOpsPrimer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NetDevOps Primer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NAF Framework
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    NAF Framework
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orchestrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orchestrator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributors
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#intent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#executor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Executor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collector
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#observability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Observability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#orchestrator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Orchestrator
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contributors
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="the-naf-framework">The NAF Framework</h1>
+<p>This document outlines a modular, vendor-neutral framework for network automation. It defines a high-level reference model comprising key building blocks and functions necessary for designing, implementing, or refining automation strategies. The framework serves both as a starting point for new automation efforts and a guide for evolving existing solutions.</p>
+<h2 id="context">Context</h2>
+<p>Network automation encompasses a wide range of use cases and infrastructure types, including on-premises, cloud, and hybrid environments. It covers everything from hardware provisioning and protocol configuration to performance monitoring and policy enforcement.</p>
+<p>This architecture defines functional building blocks that can be composed into tools. Rather than starting with specific tools, we advocate designing around required functionalities. Teams can begin with a narrow focus—such as monitoring or automation—and expand over time as needs evolve.</p>
+<p>All components SHOULD follow modern software engineering practices, such as version control and CI/CD, and expose machine-friendly APIs (documented via schema). This ensures seamless integration with internal systems and external tooling for security, logging, observability, and traceability.</p>
+<p>Moreover, all the blocks MAY be implemented by one or more components as needed. The blocks don’t have to be a single instance; there could be many instances depending on the concrete implementation.</p>
+<h2 id="architecture">Architecture</h2>
+<p>The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.</p>
+<pre class="mermaid"><code>block-beta
+    columns 7
+    
+	space:1	
+    block:layer1:5
+        Presentation["Presentation"]
+    end
+	space:1
+
+    space:7
+
+    
+    block:Observability:2
+        columns 2
+        %% ObsLabel["Observabilit"]:2
+        ObservedState[("Observed State")]:1
+        ObservedLogic["Observed Logic"]:1
+    end
+
+	space
+    
+	block:Orchestration:1
+		columns 1
+		OrchLabel["Orchestration"]:1
+	end
+
+	space
+    
+    block:Intent:2
+        columns 2
+        %% IntLabel["Intent"]:2
+        IntendedState[("Intended State")]:1
+        IntendedLogic["Intended Logic"]:1
+    end
+    
+    space:7
+
+	space
+
+    
+    Collector["Collector"]:2
+	space
+    Executor["Executor"]:2
+	space
+    
+	space:7
+	space:1
+    
+    block:layer4:5
+        NetworkInfra["Network Infrastructure"]
+    end
+    
+    Presentation &lt;--&gt; Observability
+    Presentation &lt;--&gt; Orchestration
+    Presentation &lt;--&gt; Intent
+    
+    Observability &lt;--&gt; Orchestration
+    Orchestration &lt;--&gt; Intent
+    
+    Collector --&gt; Observability
+    Collector &lt;--&gt; Orchestration
+	NetworkInfra --&gt; Collector
+    
+    Orchestration --&gt; Executor
+    Intent --&gt; Executor
+    Executor --&gt; NetworkInfra
+    
+    classDef darkStyle fill:#3a4149,stroke:#4a9eff,stroke-width:2px,color:#e8e8e8,font-size:20px,font-weight:bold
+    
+    class Presentation,NetworkInfra,ObsLabel,IntLabel,Collector,Executor,ObservedState,ObservedLogic,IntendedState,IntendedLogic,OrchLabel darkStyle</code></pre>
+<ul>
+<li>Intent: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.</li>
+<li>Observability: It persists the actual network state, and defines the logic to process it.</li>
+<li>Orchestrator: Defines how the automation tasks are coordinated and executed in response to events.</li>
+<li>Executor: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.</li>
+<li>Collector:  In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.</li>
+<li>Presentation: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools. </li>
+</ul>
+<h2 id="intent">Intent</h2>
+<ul>
+<li>It MUST be capable of representing, in a structured form, any network-related aspect. This broad scope includes, but is not limited to, data such as IP addressing, data center infrastructure (e.g., racks, cabling), routing protocols, virtualized services, secrets, operational levels (such as maximum CPU), configuration templates or data mappings, and artifacts, as well as service abstraction or policy definitions. </li>
+<li>The data MUST support create, read, update, and delete operations. </li>
+<li>Access to this information MUST be exposed through a standardized, well-documented Application Programming Interface (API) (e.g., REST, GraphQL, etc.).</li>
+<li>The modeling SHOULD use a neutral representation that will be derived into vendor-specific configuration artifacts.</li>
+<li>It SHOULD provide a consistent and unified view of the desired state, even when the data is distributed across multiple data sources. </li>
+<li>In addition to the core network data, it SHOULD include metadata that supports effective data governance, such as timestamps, data origin, data ownership, and valid periods.</li>
+<li>Ideally, these operations SHOULD be transactional, offer custom validation, and provide a versioned access to data.</li>
+<li>It MAY include all the logic related to intended state management, such as data validation, data aggregation or replication, breaking down abstract services into concrete objects, and combining data to generate configuration artifacts.</li>
+</ul>
+<h2 id="executor">Executor</h2>
+<ul>
+<li>It MUST be capable of interacting with any of the supported network write interfaces, including SSH, NETCONF, gNMI/gNOI, and REST APIs.</li>
+<li>It SHOULD support any network operation that alters the network state, such as deploying a full or partial configuration artifact or performing device actions like reboots and software updates.</li>
+<li>The task input SHOULD come from the intended state or be derived from it through data originating from the Observability component.</li>
+<li>It SHOULD provide a dry-run operation to check the expected result of the execution without actually executing it.</li>
+<li>It SHOULD support transactional execution of the changes.</li>
+<li>It MAY support both imperative approaches (where the task defines how to operate) and declarative approaches (where the task defines what the desired outcome is, and the system determines how to achieve it). In both cases, the operation SHOULD be idempotent; rerunning it should produce the same result.</li>
+</ul>
+<h2 id="collector">Collector</h2>
+<ul>
+<li>It MUST includes capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.</li>
+<li>The data values SHOULD be normalized from different vendors and method specifics.</li>
+</ul>
+<h2 id="observability">Observability</h2>
+<ul>
+<li>It MUST support historical data persistence and offer powerful programmatic access to this data—enabling advanced analytics, reporting, and troubleshooting workflows.</li>
+<li>It SHOULD offer a capable query language to extract the data.</li>
+<li>It SHOULD expose relevant insights into the current network state and automatically generate events when discrepancies are detected between the actual state (configuration or operational) and the intended state. These events MAY be processed by humans or connected to the Orchestration block to be automatically processed.</li>
+<li>Retrieved data MAY be enriched with contextual information from the intended state, including other third-party sources (e.g., EoL information, CVEs, maintenance notifications, etc.), enhancing analysis and enabling more accurate data correlation.</li>
+</ul>
+<h2 id="orchestrator">Orchestrator</h2>
+<ul>
+<li>It MUST enable the coordination and integration of processes across the various building blocks, allowing the creation of more sophisticated and end-to-end automation workflows. It doesn't directly interact with the network infrastructure.</li>
+<li>Process execution SHOULD follow an event-driven approach, where events can be received synchronously, asynchronously, or generated on a scheduled basis.</li>
+<li>Execution logic SHOULD allow for reverse/compensating actions when a step results in an error or unexpected result, allowing for a controlled rollback. This may be hard to implement due to network infrastructure limitations.</li>
+<li>It SHOULD provide a dry-run operation to check the expected result of the workflow without actually executing it.</li>
+<li>It SHOULD provide the ability to schedule the execution of a workflow on a regular basis or at a given time in the future.</li>
+<li>It SHOULD provide end users with an understanding of the whole automation logging and traceability in the past and current workflows.</li>
+<li>It MAY include logic to correlate multiple events, infer relationships, and determine the appropriate course of action based on the event context.</li>
+</ul>
+<h2 id="presentation">Presentation</h2>
+<ul>
+<li>It MUST provide robust and flexible authentication and authorization capabilities.</li>
+<li>This component MAY take various forms depending on the needs of the end user, including graphical user interfaces, ITSM, change management systems, messaging platforms, documentation portals, or reporting dashboards.</li>
+<li>It MAY support both read and write interactions, enabling users to view data, initiate tasks, or approve changes.</li>
+<li>It is designed to interface with any of the other building blocks as required, serving as the primary point of contact between humans and the automation system, but this does not imply the need for a single pane of glass.</li>
+</ul>
+<h2 id="contributors">Contributors</h2>
+<ul>
+<li>Christian Adell</li>
+<li>Ryan Shaw</li>
+<li>Dinesh Dutt</li>
+<li>Claudia de Luna</li>
+<li>Damien Garros</li>
+<li>Wim Henderickx</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      
+        <script src="../../optionalConfig.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.5.0/dist/mermaid.min.js"></script>
+      
+        <script src="../../extra-loader.js"></script>
+      
+    
+  </body>
+</html>
