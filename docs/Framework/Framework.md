@@ -1,4 +1,4 @@
-# The Network Automation Architecture by the NAF
+# The NAF Framework
 
 This document outlines a modular, vendor-neutral framework for network automation. It defines a high-level reference model comprising key building blocks and functions necessary for designing, implementing, or refining automation strategies. The framework serves both as a starting point for new automation efforts and a guide for evolving existing solutions.
 
