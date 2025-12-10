@@ -8,9 +8,11 @@ The history and building blocks you need to know before you get started leveragi
 
 [The NetDevOps Primer](NetDevOpsPrimer/NetDevOpsPrimer.md)
 
-## Framework
+## NAF Framework (Network Automation Architecture)
 
-TBD...
+A high-level, modular, vendor-neutral reference model comprising key building blocks and functions necessary for designing, implementing, or refining automation strategies.
+
+[The NAF Framework](Framework/Framework.md)
 
 ## Your Idea Here
 
