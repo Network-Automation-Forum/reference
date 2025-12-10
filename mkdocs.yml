@@ -4,7 +4,7 @@ site_description: A place to collaborate on reference architectures, reference f
 nav:
   - Home: "index.md"
   - NetDevOps Primer: "NetDevOpsPrimer/NetDevOpsPrimer.md"
-  - Network Automation Architecture Framework: "Framework/Framework.md"
+  - NAF Framework: "Framework/Framework.md"
 
 
 repo_url: https://github.com/Network-Automation-Forum/reference

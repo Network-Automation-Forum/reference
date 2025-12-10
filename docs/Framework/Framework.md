@@ -1,4 +1,4 @@
-# The Network Automation Architecture by the NAF
+# The NAF Framework
 
 This document outlines a modular, vendor-neutral framework for network automation. It defines a high-level reference model comprising key building blocks and functions necessary for designing, implementing, or refining automation strategies. The framework serves both as a starting point for new automation efforts and a guide for evolving existing solutions.
 
@@ -12,7 +12,7 @@ All components SHOULD follow modern software engineering practices, such as vers
 
 Moreover, all the blocks MAY be implemented by one or more components as needed. The blocks don’t have to be a single instance; there could be many instances depending on the concrete implementation.
 
-## The architecture
+## Architecture
 
 The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.
 
