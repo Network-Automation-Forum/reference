@@ -1,3 +1,5 @@
+<img src="Icons/naf-project-icon-128.png" width="64">
+
 # The NAF Framework
 
 This document outlines a modular, vendor-neutral framework for network automation. It defines a high-level reference model comprising key building blocks and functions necessary for designing, implementing, or refining automation strategies. The framework serves both as a starting point for new automation efforts and a guide for evolving existing solutions.
@@ -16,88 +18,16 @@ Moreover, all the blocks MAY be implemented by one or more components as needed.
 
 The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.
 
-```mermaid
-block-beta
-    columns 7
-    
-	space:1	
-    block:layer1:5
-        Presentation["Presentation"]
-    end
-	space:1
+![NAF Architecture](naf-automation-framework-v1-dark.png)
 
-    space:7
+- <img src="Icons/naf-icon-intent-colored.png" width="24"> **Intent**: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
+- <img src="Icons/naf-icon-observability-colored.png" width="24"> **Observability**: It persists the actual network state, and defines the logic to process it.
+- <img src="Icons/naf-icon-orchestration-colored.png" width="24"> **Orchestrator**: Defines how the automation tasks are coordinated and executed in response to events.
+- <img src="Icons/naf-icon-executor-colored.png" width="24"> **Executor**: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.
+- <img src="Icons/naf-icon-collector-colored.png" width="24"> **Collector**: In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.
+- <img src="Icons/naf-icon-presentation-colored.png" width="24"> **Presentation**: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools.
 
-    
-    block:Observability:2
-        columns 2
-        %% ObsLabel["Observabilit"]:2
-        ObservedState[("Observed State")]:1
-        ObservedLogic["Observed Logic"]:1
-    end
-
-	space
-    
-	block:Orchestration:1
-		columns 1
-		OrchLabel["Orchestration"]:1
-	end
-
-	space
-    
-    block:Intent:2
-        columns 2
-        %% IntLabel["Intent"]:2
-        IntendedState[("Intended State")]:1
-        IntendedLogic["Intended Logic"]:1
-    end
-    
-    space:7
-
-	space
-
-    
-    Collector["Collector"]:2
-	space
-    Executor["Executor"]:2
-	space
-    
-	space:7
-	space:1
-    
-    block:layer4:5
-        NetworkInfra["Network Infrastructure"]
-    end
-    
-    Presentation <--> Observability
-    Presentation <--> Orchestration
-    Presentation <--> Intent
-    
-    Observability <--> Orchestration
-    Orchestration <--> Intent
-    
-    Collector --> Observability
-    Collector <--> Orchestration
-	NetworkInfra --> Collector
-    
-    Orchestration --> Executor
-    Intent --> Executor
-    Executor --> NetworkInfra
-    
-    classDef darkStyle fill:#3a4149,stroke:#4a9eff,stroke-width:2px,color:#e8e8e8,font-size:20px,font-weight:bold
-    
-    class Presentation,NetworkInfra,ObsLabel,IntLabel,Collector,Executor,ObservedState,ObservedLogic,IntendedState,IntendedLogic,OrchLabel darkStyle
-```
-
-
-- Intent: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
-- Observability: It persists the actual network state, and defines the logic to process it.
-- Orchestrator: Defines how the automation tasks are coordinated and executed in response to events.
-- Executor: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.
-- Collector:  In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.
-- Presentation: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools. 
-
-## Intent
+## <img src="Icons/naf-icon-intent-colored.png" width="28"> Intent
 
 - It MUST be capable of representing, in a structured form, any network-related aspect. This broad scope includes, but is not limited to, data such as IP addressing, data center infrastructure (e.g., racks, cabling), routing protocols, virtualized services, secrets, operational levels (such as maximum CPU), configuration templates or data mappings, and artifacts, as well as service abstraction or policy definitions. 
 - The data MUST support create, read, update, and delete operations. 
@@ -108,7 +38,7 @@ block-beta
 - Ideally, these operations SHOULD be transactional, offer custom validation, and provide a versioned access to data.
 - It MAY include all the logic related to intended state management, such as data validation, data aggregation or replication, breaking down abstract services into concrete objects, and combining data to generate configuration artifacts.
 
-## Executor
+## <img src="Icons/naf-icon-executor-colored.png" width="28"> Executor
 
 - It MUST be capable of interacting with any of the supported network write interfaces, including SSH, NETCONF, gNMI/gNOI, and REST APIs.
 - It SHOULD support any network operation that alters the network state, such as deploying a full or partial configuration artifact or performing device actions like reboots and software updates.
@@ -117,19 +47,19 @@ block-beta
 - It SHOULD support transactional execution of the changes.
 - It MAY support both imperative approaches (where the task defines how to operate) and declarative approaches (where the task defines what the desired outcome is, and the system determines how to achieve it). In both cases, the operation SHOULD be idempotent; rerunning it should produce the same result.
 
-## Collector
+## <img src="Icons/naf-icon-collector-colored.png" width="28"> Collector
 
 - It MUST includes capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
 - The data values SHOULD be normalized from different vendors and method specifics.
 
-## Observability
+## <img src="Icons/naf-icon-observability-colored.png" width="28"> Observability
 
 - It MUST support historical data persistence and offer powerful programmatic access to this data—enabling advanced analytics, reporting, and troubleshooting workflows.
 - It SHOULD offer a capable query language to extract the data.
 - It SHOULD expose relevant insights into the current network state and automatically generate events when discrepancies are detected between the actual state (configuration or operational) and the intended state. These events MAY be processed by humans or connected to the Orchestration block to be automatically processed.
 - Retrieved data MAY be enriched with contextual information from the intended state, including other third-party sources (e.g., EoL information, CVEs, maintenance notifications, etc.), enhancing analysis and enabling more accurate data correlation.
 
-## Orchestrator
+## <img src="Icons/naf-icon-orchestration-colored.png" width="28"> Orchestrator
 
 - It MUST enable the coordination and integration of processes across the various building blocks, allowing the creation of more sophisticated and end-to-end automation workflows. It doesn't directly interact with the network infrastructure.
 - Process execution SHOULD follow an event-driven approach, where events can be received synchronously, asynchronously, or generated on a scheduled basis.
@@ -139,12 +69,16 @@ block-beta
 - It SHOULD provide end users with an understanding of the whole automation logging and traceability in the past and current workflows.
 - It MAY include logic to correlate multiple events, infer relationships, and determine the appropriate course of action based on the event context.
 
-## Presentation
+## <img src="Icons/naf-icon-presentation-colored.png" width="28"> Presentation
 
 - It MUST provide robust and flexible authentication and authorization capabilities.
 - This component MAY take various forms depending on the needs of the end user, including graphical user interfaces, ITSM, change management systems, messaging platforms, documentation portals, or reporting dashboards.
 - It MAY support both read and write interactions, enabling users to view data, initiate tasks, or approve changes.
 - It is designed to interface with any of the other building blocks as required, serving as the primary point of contact between humans and the automation system, but this does not imply the need for a single pane of glass.
+
+## Brand
+
+The NAF Framework has a defined visual identity including a color palette, iconography, and layout guidelines for each building block. For full details on colors, typography, icon specifications, and diagram generation prompts, see the [Brand Guidelines](brand-guidelines.md).
 
 ## Contributors
 
