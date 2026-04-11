@@ -10,8 +10,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
-  <rect width="512" height="512" rx="96" fill="url(#sheen)"/>
+  <rect width="512" height="512" rx="96" fill="#000000"/>
 
   <!-- LAYER 1 — PRESENTATION -->
   <rect x="48" y="48" width="416" height="95" rx="16" fill="#f5c518" filter="url(#iconShadow)"/>
@@ -22,8 +21,8 @@
   <rect x="336" y="155" width="128" height="95" rx="16" fill="#ff6d2e" filter="url(#iconShadow)"/>
 
   <!-- LAYER 3 — Collector & Executor -->
-  <rect x="72" y="262" width="168" height="95" rx="16" fill="#00e676" fill-opacity="0.7" filter="url(#iconShadow)"/>
-  <rect x="272" y="262" width="168" height="95" rx="16" fill="#ff6d2e" fill-opacity="0.7" filter="url(#iconShadow)"/>
+  <rect x="72" y="262" width="168" height="95" rx="16" fill="#F43F5E" filter="url(#iconShadow)"/>
+  <rect x="272" y="262" width="168" height="95" rx="16" fill="#6366F1" filter="url(#iconShadow)"/>
 
   <!-- LAYER 4 — INFRASTRUCTURE -->
   <rect x="48" y="369" width="416" height="95" rx="16" fill="#64748b" filter="url(#iconShadow)"/>

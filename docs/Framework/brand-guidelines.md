@@ -21,16 +21,16 @@ This document defines the visual identity for the Network Automation Framework (
 ## 3. Color Palette
 
 
-Each building block has a dedicated color. Collector and Executor use the same hue as their parent block (Observability and Intent respectively) at 70 % opacity to visually link the read/write transport layer to the logic layer above.
+Each building block has a dedicated color. All seven blocks use distinct hues for maximum differentiation across contexts.
 
 | Building Block | Color Name | Hex | RGB | Usage Notes |
 |---|---|---|---|---|
-| **Presentation** | NAF Yellow | `#f5c518` | 245, 197, 24 | Full opacity. Top-level layer. |
-| **Observability** | Vivid Green | `#00e676` | 0, 230, 118 | Full opacity. Read-side logic. |
-| **Orchestration** | Electric Cyan | `#00d4ff` | 0, 212, 255 | Full opacity. Central coordination. |
-| **Intent** | Hot Orange | `#ff6d2e` | 255, 109, 46 | Full opacity. Write-side logic. |
-| **Collector** | Vivid Green 70 % | `#00e676B3` | rgba(0, 230, 118, 0.7) | Transport layer — read side. |
-| **Executor** | Hot Orange 70 % | `#ff6d2eB3` | rgba(255, 109, 46, 0.7) | Transport layer — write side. |
+| **Presentation** | NAF Yellow | `#f5c518` | 245, 197, 24 | Top-level layer. |
+| **Observability** | Vivid Green | `#00e676` | 0, 230, 118 | Read-side logic. |
+| **Orchestration** | Electric Cyan | `#00d4ff` | 0, 212, 255 | Central coordination. |
+| **Intent** | Hot Orange | `#ff6d2e` | 255, 109, 46 | Write-side logic. |
+| **Collector** | Rose Red | `#F43F5E` | 244, 63, 94 | Transport layer — read side. |
+| **Executor** | Indigo | `#6366F1` | 99, 102, 241 | Transport layer — write side. |
 | **Infrastructure** | Slate Gray | `#64748b` | 100, 116, 139 | Bottom layer. Neutral anchor. |
 
 ### Background Colors
@@ -65,7 +65,7 @@ A screen with a stand, representing dashboards and user interfaces. Style: Geome
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Presentation icon — transparent](Icons/naf-icon-presentation-transparent.png) | ![Presentation icon — colored](Icons/naf-icon-presentation-colored.png) |
+| ![Presentation icon — transparent](naf-icon-presentation-transparent.png) | ![Presentation icon — colored](naf-icon-presentation-colored.png) |
 
 #### Observability — Search / Inspect
 
@@ -73,7 +73,7 @@ A magnifying glass representing monitoring, inspection, and data discovery. Styl
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Observability icon — transparent](Icons/naf-icon-observability-transparent.png) | ![Observability icon — colored](Icons/naf-icon-observability-colored.png) |
+| ![Observability icon — transparent](naf-icon-observability-transparent.png) | ![Observability icon — colored](naf-icon-observability-colored.png) |
 
 #### Orchestration — Grid Flow
 
@@ -81,7 +81,7 @@ A 2×2 grid of rounded squares connected by lines, representing workflow coordin
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Orchestration icon — transparent](Icons/naf-icon-orchestration-transparent.png) | ![Orchestration icon — colored](Icons/naf-icon-orchestration-colored.png) |
+| ![Orchestration icon — transparent](naf-icon-orchestration-transparent.png) | ![Orchestration icon — colored](naf-icon-orchestration-colored.png) |
 
 #### Intent — Diamond / Prism
 
@@ -89,7 +89,7 @@ A layered diamond shape representing structured intent definitions and source of
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Intent icon — transparent](Icons/naf-icon-intent-transparent.png) | ![Intent icon — colored](Icons/naf-icon-intent-colored.png) |
+| ![Intent icon — transparent](naf-icon-intent-transparent.png) | ![Intent icon — colored](naf-icon-intent-colored.png) |
 
 #### Collector — Upward Chevrons
 
@@ -97,7 +97,7 @@ Three stacked upward-pointing chevrons at increasing opacity, representing data 
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Collector icon — transparent](Icons/naf-icon-collector-transparent.png) | ![Collector icon — colored](Icons/naf-icon-collector-colored.png) |
+| ![Collector icon — transparent](naf-icon-collector-transparent.png) | ![Collector icon — colored](naf-icon-collector-colored.png) |
 
 #### Executor — Downward Chevrons
 
@@ -105,7 +105,7 @@ Three stacked downward-pointing chevrons at increasing opacity, representing con
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Executor icon — transparent](Icons/naf-icon-executor-transparent.png) | ![Executor icon — colored](Icons/naf-icon-executor-colored.png) |
+| ![Executor icon — transparent](naf-icon-executor-transparent.png) | ![Executor icon — colored](naf-icon-executor-colored.png) |
 
 #### Infrastructure — Network Mesh
 
@@ -113,7 +113,7 @@ A central node connected to four corner nodes, representing the network fabric. 
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Infrastructure icon — transparent](Icons/naf-icon-infrastructure-transparent.png) | ![Infrastructure icon — colored](Icons/naf-icon-infrastructure-colored.png) |
+| ![Infrastructure icon — transparent](naf-icon-infrastructure-transparent.png) | ![Infrastructure icon — colored](naf-icon-infrastructure-colored.png) |
 
 ---
 
@@ -235,13 +235,13 @@ Add subtle horizontal connector lines between adjacent middle blocks (double lin
 LAYER 3 — Two narrower blocks (~310px each, height 90px, rx=14), centered under their parent:
 
 Left — COLLECTOR:
-- Color: #00e676 at 70% opacity (#00e676B3 or rgba(0,230,118,0.7))
+- Color: #F43F5E (Rose Red)
 - Icon: Three stacked upward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
 - Title: "COLLECTOR" in 15px bold black
 - Sub-text: "Read Operations" and "▲ READ FROM INFRASTRUCTURE" in 10px
 
 Right — EXECUTOR:
-- Color: rgba(255,109,46,0.7) or #ff6d2eB3
+- Color: #6366F1 (Indigo)
 - Icon: Three stacked downward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
 - Title: "EXECUTOR" in 15px bold black
 - Sub-text: "Write Operations · Idempotent · Dry-Run" and "▼ WRITE TO INFRASTRUCTURE" in 10px
@@ -296,10 +296,10 @@ Here are the 7 icons and their colors:
 4. INTENT (color: #ff6d2e)
    Diamond/prism icon: A closed diamond path "M12 3L2 9l10 6 10-6-10-6z" with a dashed lower layer "M2 15l10 6 10-6". Stroke-based, no fill.
 
-5. COLLECTOR (color: #00e676B3)
+5. COLLECTOR (color: #F43F5E)
    Upward chevrons: Three "V" shapes pointing up — "M5 10l7-7 7 7" at opacity 0.4, "M5 14l7-7 7 7" at 0.7, "M5 18l7-7 7 7" at 1.0. Filled black.
 
-6. EXECUTOR (color: #ff6d2eB3)
+6. EXECUTOR (color: #6366F1)
    Downward chevrons: Three inverted "V" shapes pointing down — "M5 6l7 7 7-7" at opacity 0.4, "M5 10l7 7 7-7" at 0.7, "M5 14l7 7 7-7" at 1.0. Filled black.
 
 7. INFRASTRUCTURE (color: #64748b)
@@ -316,9 +316,9 @@ Here are the 7 icons and their colors:
 |---|---|
 | `naf-automation-framework-v1-dark.svg` / `.png` | Full architecture diagram — dark background |
 | `naf-automation-framework-v1-white.svg` / `.png` | Full architecture diagram — white background |
-| `Icons/naf-icon-{block}-transparent.svg` / `.png` | Individual icon, transparent background (×7) |
-| `Icons/naf-icon-{block}-colored.svg` / `.png` | Individual icon, colored background (×7) |
-| `Icons/naf-project-icon.svg` / `.png` (64–1024) | Project icon in multiple sizes |
+| `naf-icon-{block}-transparent.svg` / `.png` | Individual icon, transparent background (×7) |
+| `naf-icon-{block}-colored.svg` / `.png` | Individual icon, colored background (×7) |
+| `naf-project-icon.svg` / `.png` (64–1024) | Project icon in multiple sizes |
 | `naf-sticker.svg` / `.png` (512, 1024) | NAF sticker artwork |
 | `naf-brand-guidelines.md` | This document |
 | `naf-brand-guidelines.pdf` | PDF version of this document |
