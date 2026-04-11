@@ -25,10 +25,10 @@ Each building block has a dedicated color. All seven blocks use distinct hues fo
 
 | Building Block | Color Name | Hex | RGB | Usage Notes |
 |---|---|---|---|---|
-| **Presentation** | NAF Yellow | `#f5c518` | 245, 197, 24 | Full opacity. Top-level layer. |
-| **Observability** | Vivid Green | `#00e676` | 0, 230, 118 | Full opacity. Read-side logic. |
-| **Orchestration** | Electric Cyan | `#00d4ff` | 0, 212, 255 | Full opacity. Central coordination. |
-| **Intent** | Hot Orange | `#ff6d2e` | 255, 109, 46 | Full opacity. Write-side logic. |
+| **Presentation** | NAF Yellow | `#f5c518` | 245, 197, 24 | Top-level layer. |
+| **Observability** | Vivid Green | `#00e676` | 0, 230, 118 | Read-side logic. |
+| **Orchestration** | Electric Cyan | `#00d4ff` | 0, 212, 255 | Central coordination. |
+| **Intent** | Hot Orange | `#ff6d2e` | 255, 109, 46 | Write-side logic. |
 | **Collector** | Rose Red | `#F43F5E` | 244, 63, 94 | Transport layer — read side. |
 | **Executor** | Indigo | `#6366F1` | 99, 102, 241 | Transport layer — write side. |
 | **Infrastructure** | Slate Gray | `#64748b` | 100, 116, 139 | Bottom layer. Neutral anchor. |
@@ -235,13 +235,13 @@ Add subtle horizontal connector lines between adjacent middle blocks (double lin
 LAYER 3 — Two narrower blocks (~310px each, height 90px, rx=14), centered under their parent:
 
 Left — COLLECTOR:
-- Color: #F43F5E at 85% opacity (rgba(244,63,94,0.85))
+- Color: #F43F5E (Rose Red)
 - Icon: Three stacked upward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
 - Title: "COLLECTOR" in 15px bold black
 - Sub-text: "Read Operations" and "▲ READ FROM INFRASTRUCTURE" in 10px
 
 Right — EXECUTOR:
-- Color: #6366F1 at 85% opacity (rgba(99,102,241,0.85))
+- Color: #6366F1 (Indigo)
 - Icon: Three stacked downward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
 - Title: "EXECUTOR" in 15px bold black
 - Sub-text: "Write Operations · Idempotent · Dry-Run" and "▼ WRITE TO INFRASTRUCTURE" in 10px
@@ -296,10 +296,10 @@ Here are the 7 icons and their colors:
 4. INTENT (color: #ff6d2e)
    Diamond/prism icon: A closed diamond path "M12 3L2 9l10 6 10-6-10-6z" with a dashed lower layer "M2 15l10 6 10-6". Stroke-based, no fill.
 
-5. COLLECTOR (color: rgba(244,63,94,0.85))
+5. COLLECTOR (color: #F43F5E)
    Upward chevrons: Three "V" shapes pointing up — "M5 10l7-7 7 7" at opacity 0.4, "M5 14l7-7 7 7" at 0.7, "M5 18l7-7 7 7" at 1.0. Filled black.
 
-6. EXECUTOR (color: rgba(99,102,241,0.85))
+6. EXECUTOR (color: #6366F1)
    Downward chevrons: Three inverted "V" shapes pointing down — "M5 6l7 7 7-7" at opacity 0.4, "M5 10l7 7 7-7" at 0.7, "M5 14l7 7 7-7" at 1.0. Filled black.
 
 7. INFRASTRUCTURE (color: #64748b)
