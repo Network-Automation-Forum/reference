@@ -1,4 +1,4 @@
-<img src="naf-project-icon-128.png" width="64">
+<img src="../images/naf-project-icon-128.png" width="64">
 
 # The NAF Framework
 
@@ -18,16 +18,16 @@ Moreover, all the blocks MAY be implemented by one or more components as needed.
 
 The proposed reference architecture defines six major functional building blocks (besides the actual network infrastructure), each with a clear and distinct purpose to enable straightforward mapping of specific features. While we acknowledge that some areas may overlap or require further refinement, our priority has been to establish a solid foundational understanding.
 
-![NAF Architecture](naf-automation-framework-v1-dark.png)
+![NAF Architecture](images/naf-automation-framework-v1-dark.png)
 
-- <img src="naf-icon-intent-colored.png" width="24"> **Intent**: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
-- <img src="naf-icon-observability-colored.png" width="24"> **Observability**: It persists the actual network state, and defines the logic to process it.
-- <img src="naf-icon-orchestration-colored.png" width="24"> **Orchestrator**: Defines how the automation tasks are coordinated and executed in response to events.
-- <img src="naf-icon-executor-colored.png" width="24"> **Executor**: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.
-- <img src="naf-icon-collector-colored.png" width="24"> **Collector**: In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.
-- <img src="naf-icon-presentation-colored.png" width="24"> **Presentation**: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools.
+- <img src="../images/naf-icon-intent-colored.png" width="24"> **Intent**: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
+- <img src="../images/naf-icon-observability-colored.png" width="24"> **Observability**: It persists the actual network state, and defines the logic to process it.
+- <img src="../images/naf-icon-orchestration-colored.png" width="24"> **Orchestrator**: Defines how the automation tasks are coordinated and executed in response to events.
+- <img src="../images/naf-icon-executor-colored.png" width="24"> **Executor**: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.
+- <img src="../images/naf-icon-collector-colored.png" width="24"> **Collector**: In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.
+- <img src="../images/naf-icon-presentation-colored.png" width="24"> **Presentation**: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools.
 
-## <img src="naf-icon-intent-colored.png" width="28"> Intent
+## <img src="../images/naf-icon-intent-colored.png" width="28"> Intent
 
 - It MUST be capable of representing, in a structured form, any network-related aspect. This broad scope includes, but is not limited to, data such as IP addressing, data center infrastructure (e.g., racks, cabling), routing protocols, virtualized services, secrets, operational levels (such as maximum CPU), configuration templates or data mappings, and artifacts, as well as service abstraction or policy definitions. 
 - The data MUST support create, read, update, and delete operations. 
@@ -38,7 +38,7 @@ The proposed reference architecture defines six major functional building blocks
 - Ideally, these operations SHOULD be transactional, offer custom validation, and provide a versioned access to data.
 - It MAY include all the logic related to intended state management, such as data validation, data aggregation or replication, breaking down abstract services into concrete objects, and combining data to generate configuration artifacts.
 
-## <img src="naf-icon-executor-colored.png" width="28"> Executor
+## <img src="../images/naf-icon-executor-colored.png" width="28"> Executor
 
 - It MUST be capable of interacting with any of the supported network write interfaces, including SSH, NETCONF, gNMI/gNOI, and REST APIs.
 - It SHOULD support any network operation that alters the network state, such as deploying a full or partial configuration artifact or performing device actions like reboots and software updates.
@@ -47,19 +47,19 @@ The proposed reference architecture defines six major functional building blocks
 - It SHOULD support transactional execution of the changes.
 - It MAY support both imperative approaches (where the task defines how to operate) and declarative approaches (where the task defines what the desired outcome is, and the system determines how to achieve it). In both cases, the operation SHOULD be idempotent; rerunning it should produce the same result.
 
-## <img src="naf-icon-collector-colored.png" width="28"> Collector
+## <img src="../images/naf-icon-collector-colored.png" width="28"> Collector
 
 - It MUST includes capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
 - The data values SHOULD be normalized from different vendors and method specifics.
 
-## <img src="naf-icon-observability-colored.png" width="28"> Observability
+## <img src="../images/naf-icon-observability-colored.png" width="28"> Observability
 
 - It MUST support historical data persistence and offer powerful programmatic access to this data—enabling advanced analytics, reporting, and troubleshooting workflows.
 - It SHOULD offer a capable query language to extract the data.
 - It SHOULD expose relevant insights into the current network state and automatically generate events when discrepancies are detected between the actual state (configuration or operational) and the intended state. These events MAY be processed by humans or connected to the Orchestration block to be automatically processed.
 - Retrieved data MAY be enriched with contextual information from the intended state, including other third-party sources (e.g., EoL information, CVEs, maintenance notifications, etc.), enhancing analysis and enabling more accurate data correlation.
 
-## <img src="naf-icon-orchestration-colored.png" width="28"> Orchestrator
+## <img src="../images/naf-icon-orchestration-colored.png" width="28"> Orchestrator
 
 - It MUST enable the coordination and integration of processes across the various building blocks, allowing the creation of more sophisticated and end-to-end automation workflows. It doesn't directly interact with the network infrastructure.
 - Process execution SHOULD follow an event-driven approach, where events can be received synchronously, asynchronously, or generated on a scheduled basis.
@@ -69,7 +69,7 @@ The proposed reference architecture defines six major functional building blocks
 - It SHOULD provide end users with an understanding of the whole automation logging and traceability in the past and current workflows.
 - It MAY include logic to correlate multiple events, infer relationships, and determine the appropriate course of action based on the event context.
 
-## <img src="naf-icon-presentation-colored.png" width="28"> Presentation
+## <img src="../images/naf-icon-presentation-colored.png" width="28"> Presentation
 
 - It MUST provide robust and flexible authentication and authorization capabilities.
 - This component MAY take various forms depending on the needs of the end user, including graphical user interfaces, ITSM, change management systems, messaging platforms, documentation portals, or reporting dashboards.

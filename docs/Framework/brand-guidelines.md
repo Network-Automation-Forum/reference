@@ -8,13 +8,23 @@ This document defines the visual identity for the Network Automation Framework (
 
 ## 2. Reference Diagrams
 
-### Dark Variant
+Two diagram styles are available: the **full** variant with detailed sub-labels for each block, and the **minimal** variant that shows only the block titles and icons for use at smaller sizes or in dense layouts. Each style is provided on both dark and light backgrounds.
 
-![NAF Architecture — Dark Background](naf-automation-framework-v1-dark.png)
+### Full — Dark Variant
 
-### Light Variant
+![NAF Architecture — Dark Background](images/naf-automation-framework-v1-dark.png)
 
-![NAF Architecture — White Background](naf-automation-framework-v1-white.png)
+### Full — Light Variant
+
+![NAF Architecture — White Background](images/naf-automation-framework-v1-white.png)
+
+### Minimal — Dark Variant
+
+![NAF Architecture Minimal — Dark Background](images/naf-automation-framework-v1-minimal-dark.png)
+
+### Minimal — Light Variant
+
+![NAF Architecture Minimal — White Background](images/naf-automation-framework-v1-minimal-white.png)
 
 ---
 
@@ -65,7 +75,7 @@ A screen with a stand, representing dashboards and user interfaces. Style: Geome
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Presentation icon — transparent](naf-icon-presentation-transparent.png) | ![Presentation icon — colored](naf-icon-presentation-colored.png) |
+| ![Presentation icon — transparent](images/naf-icon-presentation-transparent.png) | ![Presentation icon — colored](images/naf-icon-presentation-colored.png) |
 
 #### Observability — Search / Inspect
 
@@ -73,7 +83,7 @@ A magnifying glass representing monitoring, inspection, and data discovery. Styl
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Observability icon — transparent](naf-icon-observability-transparent.png) | ![Observability icon — colored](naf-icon-observability-colored.png) |
+| ![Observability icon — transparent](images/naf-icon-observability-transparent.png) | ![Observability icon — colored](images/naf-icon-observability-colored.png) |
 
 #### Orchestration — Grid Flow
 
@@ -81,7 +91,7 @@ A 2×2 grid of rounded squares connected by lines, representing workflow coordin
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Orchestration icon — transparent](naf-icon-orchestration-transparent.png) | ![Orchestration icon — colored](naf-icon-orchestration-colored.png) |
+| ![Orchestration icon — transparent](images/naf-icon-orchestration-transparent.png) | ![Orchestration icon — colored](images/naf-icon-orchestration-colored.png) |
 
 #### Intent — Diamond / Prism
 
@@ -89,7 +99,7 @@ A layered diamond shape representing structured intent definitions and source of
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Intent icon — transparent](naf-icon-intent-transparent.png) | ![Intent icon — colored](naf-icon-intent-colored.png) |
+| ![Intent icon — transparent](images/naf-icon-intent-transparent.png) | ![Intent icon — colored](images/naf-icon-intent-colored.png) |
 
 #### Collector — Upward Chevrons
 
@@ -97,7 +107,7 @@ Three stacked upward-pointing chevrons at increasing opacity, representing data 
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Collector icon — transparent](naf-icon-collector-transparent.png) | ![Collector icon — colored](naf-icon-collector-colored.png) |
+| ![Collector icon — transparent](images/naf-icon-collector-transparent.png) | ![Collector icon — colored](images/naf-icon-collector-colored.png) |
 
 #### Executor — Downward Chevrons
 
@@ -105,7 +115,7 @@ Three stacked downward-pointing chevrons at increasing opacity, representing con
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Executor icon — transparent](naf-icon-executor-transparent.png) | ![Executor icon — colored](naf-icon-executor-colored.png) |
+| ![Executor icon — transparent](images/naf-icon-executor-transparent.png) | ![Executor icon — colored](images/naf-icon-executor-colored.png) |
 
 #### Infrastructure — Network Mesh
 
@@ -113,7 +123,7 @@ A central node connected to four corner nodes, representing the network fabric. 
 
 | Transparent | Colored |
 |:---:|:---:|
-| ![Infrastructure icon — transparent](naf-icon-infrastructure-transparent.png) | ![Infrastructure icon — colored](naf-icon-infrastructure-colored.png) |
+| ![Infrastructure icon — transparent](images/naf-icon-infrastructure-transparent.png) | ![Infrastructure icon — colored](images/naf-icon-infrastructure-colored.png) |
 
 ---
 
@@ -316,6 +326,8 @@ Here are the 7 icons and their colors:
 |---|---|
 | `naf-automation-framework-v1-dark.svg` / `.png` | Full architecture diagram — dark background |
 | `naf-automation-framework-v1-white.svg` / `.png` | Full architecture diagram — white background |
+| `naf-automation-framework-v1-minimal-dark.svg` / `.png` | Minimal architecture diagram — dark background |
+| `naf-automation-framework-v1-minimal-white.svg` / `.png` | Minimal architecture diagram — white background |
 | `naf-icon-{block}-transparent.svg` / `.png` | Individual icon, transparent background (×7) |
 | `naf-icon-{block}-colored.svg` / `.png` | Individual icon, colored background (×7) |
 | `naf-project-icon.svg` / `.png` (64–1024) | Project icon in multiple sizes |
