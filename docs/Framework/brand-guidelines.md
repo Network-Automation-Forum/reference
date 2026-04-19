@@ -8,13 +8,23 @@ This document defines the visual identity for the Network Automation Framework (
 
 ## 2. Reference Diagrams
 
-### Dark Variant
+Two diagram styles are available: the **full** variant with detailed sub-labels for each block, and the **minimal** variant that shows only the block titles and icons for use at smaller sizes or in dense layouts. Each style is provided on both dark and light backgrounds.
+
+### Full — Dark Variant
 
 ![NAF Architecture — Dark Background](images/naf-automation-framework-v1-dark.png)
 
-### Light Variant
+### Full — Light Variant
 
 ![NAF Architecture — White Background](images/naf-automation-framework-v1-white.png)
+
+### Minimal — Dark Variant
+
+![NAF Architecture Minimal — Dark Background](images/naf-automation-framework-v1-minimal-dark.png)
+
+### Minimal — Light Variant
+
+![NAF Architecture Minimal — White Background](images/naf-automation-framework-v1-minimal-white.png)
 
 ---
 
@@ -316,6 +326,8 @@ Here are the 7 icons and their colors:
 |---|---|
 | `naf-automation-framework-v1-dark.svg` / `.png` | Full architecture diagram — dark background |
 | `naf-automation-framework-v1-white.svg` / `.png` | Full architecture diagram — white background |
+| `naf-automation-framework-v1-minimal-dark.svg` / `.png` | Minimal architecture diagram — dark background |
+| `naf-automation-framework-v1-minimal-white.svg` / `.png` | Minimal architecture diagram — white background |
 | `naf-icon-{block}-transparent.svg` / `.png` | Individual icon, transparent background (×7) |
 | `naf-icon-{block}-colored.svg` / `.png` | Individual icon, colored background (×7) |
 | `naf-project-icon.svg` / `.png` (64–1024) | Project icon in multiple sizes |
