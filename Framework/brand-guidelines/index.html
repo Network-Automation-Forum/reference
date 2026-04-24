@@ -1,0 +1,1340 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A place to collaborate on reference architectures, reference frameworks, reference methodologies, just stuff to reference...">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../img/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>NAF — Network Automation Framework Brand Guidelines - Reference Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#naf-network-automation-framework-brand-guidelines" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://networkautomation.forum/" title="Reference Docs" class="md-header__button md-logo" aria-label="Reference Docs" data-md-component="logo">
+      
+  <img src="../../img/NAF.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Reference Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NAF — Network Automation Framework Brand Guidelines
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Network-Automation-Forum/reference" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Network-Automation-Forum/reference
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://networkautomation.forum/" title="Reference Docs" class="md-nav__button md-logo" aria-label="Reference Docs" data-md-component="logo">
+      
+  <img src="../../img/NAF.png" alt="logo">
+
+    </a>
+    Reference Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Network-Automation-Forum/reference" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Network-Automation-Forum/reference
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../NetDevOpsPrimer/NetDevOpsPrimer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NetDevOps Primer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NAF Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-reference-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Reference Diagrams
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Reference Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#full-dark-variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full — Dark Variant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#full-light-variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Full — Light Variant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-dark-variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal — Dark Variant
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-light-variant" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimal — Light Variant
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-color-palette" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Color Palette
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Color Palette">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#background-colors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Background Colors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-colors-on-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text Colors on Blocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-iconography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Iconography
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Iconography">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#icon-catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Icon Catalog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Icon Catalog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-monitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Presentation — Monitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#observability-search-inspect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Observability — Search / Inspect
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#orchestration-grid-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Orchestration — Grid Flow
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intent-diamond-prism" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Intent — Diamond / Prism
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collector-upward-chevrons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Collector — Upward Chevrons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executor-downward-chevrons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Executor — Downward Chevrons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#infrastructure-network-mesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Infrastructure — Network Mesh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-layout-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Layout Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Layout Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer Mapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#read-write-symmetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Read / Write Symmetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-sub-block-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Sub-block Content
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-typography" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Typography
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-prompt-regenerate-full-naf-architecture-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Prompt — Regenerate Full NAF Architecture Diagram
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Prompt — Regenerate Full NAF Architecture Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-start" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PROMPT START
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PROMPT END
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-prompt-generate-individual-icon-svgs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Prompt — Generate Individual Icon SVGs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Prompt — Generate Individual Icon SVGs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prompt-start_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PROMPT START
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prompt-end_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PROMPT END
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-file-inventory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. File Inventory
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="naf-network-automation-framework-brand-guidelines">NAF — Network Automation Framework Brand Guidelines</h1>
+<h2 id="1-overview">1. Overview</h2>
+<p>This document defines the visual identity for the Network Automation Framework (NAF). It covers the official color palette, iconography, layout structure, and usage rules for the seven building blocks. A ready-to-use prompt for regenerating the full architecture diagram in SVG is included at the end.</p>
+<hr />
+<h2 id="2-reference-diagrams">2. Reference Diagrams</h2>
+<p>Two diagram styles are available: the <strong>full</strong> variant with detailed sub-labels for each block, and the <strong>minimal</strong> variant that shows only the block titles and icons for use at smaller sizes or in dense layouts. Each style is provided on both dark and light backgrounds.</p>
+<h3 id="full-dark-variant">Full — Dark Variant</h3>
+<p><img alt="NAF Architecture — Dark Background" src="../images/naf-automation-framework-v1-dark.png" /></p>
+<h3 id="full-light-variant">Full — Light Variant</h3>
+<p><img alt="NAF Architecture — White Background" src="../images/naf-automation-framework-v1-white.png" /></p>
+<h3 id="minimal-dark-variant">Minimal — Dark Variant</h3>
+<p><img alt="NAF Architecture Minimal — Dark Background" src="../images/naf-automation-framework-v1-minimal-dark.png" /></p>
+<h3 id="minimal-light-variant">Minimal — Light Variant</h3>
+<p><img alt="NAF Architecture Minimal — White Background" src="../images/naf-automation-framework-v1-minimal-white.png" /></p>
+<hr />
+<h2 id="3-color-palette">3. Color Palette</h2>
+<p>Each building block has a dedicated color. All seven blocks use distinct hues for maximum differentiation across contexts.</p>
+<table>
+<thead>
+<tr>
+<th>Building Block</th>
+<th>Color Name</th>
+<th>Hex</th>
+<th>RGB</th>
+<th>Usage Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Presentation</strong></td>
+<td>NAF Yellow</td>
+<td><code>#f5c518</code></td>
+<td>245, 197, 24</td>
+<td>Top-level layer.</td>
+</tr>
+<tr>
+<td><strong>Observability</strong></td>
+<td>Vivid Green</td>
+<td><code>#00e676</code></td>
+<td>0, 230, 118</td>
+<td>Read-side logic.</td>
+</tr>
+<tr>
+<td><strong>Orchestration</strong></td>
+<td>Electric Cyan</td>
+<td><code>#00d4ff</code></td>
+<td>0, 212, 255</td>
+<td>Central coordination.</td>
+</tr>
+<tr>
+<td><strong>Intent</strong></td>
+<td>Hot Orange</td>
+<td><code>#ff6d2e</code></td>
+<td>255, 109, 46</td>
+<td>Write-side logic.</td>
+</tr>
+<tr>
+<td><strong>Collector</strong></td>
+<td>Rose Red</td>
+<td><code>#F43F5E</code></td>
+<td>244, 63, 94</td>
+<td>Transport layer — read side.</td>
+</tr>
+<tr>
+<td><strong>Executor</strong></td>
+<td>Indigo</td>
+<td><code>#6366F1</code></td>
+<td>99, 102, 241</td>
+<td>Transport layer — write side.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure</strong></td>
+<td>Slate Gray</td>
+<td><code>#64748b</code></td>
+<td>100, 116, 139</td>
+<td>Bottom layer. Neutral anchor.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="background-colors">Background Colors</h3>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Hex</th>
+<th>When to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dark</td>
+<td><code>#000000</code></td>
+<td>Presentations on dark slides, hero images, website dark mode</td>
+</tr>
+<tr>
+<td>Light</td>
+<td><code>#FFFFFF</code></td>
+<td>Print, documents, website light mode</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-colors-on-blocks">Text Colors on Blocks</h3>
+<p>All block titles and sub-labels use <strong>black</strong> (<code>#000000</code>) text at varying opacities, except Infrastructure which uses <strong>white</strong> (<code>#FFFFFF</code>) text.</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Fill</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Block title</td>
+<td><code>#000000</code> at 100 %</td>
+</tr>
+<tr>
+<td>Sub-label / description</td>
+<td><code>#000000</code> at 67 % (<code>#000000AA</code>)</td>
+</tr>
+<tr>
+<td>Infrastructure title</td>
+<td><code>#FFFFFF</code> at 100 %</td>
+</tr>
+<tr>
+<td>Infrastructure sub-label</td>
+<td><code>#94A3B8</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-iconography">4. Iconography</h2>
+<p>Each building block has a dedicated icon drawn in a consistent geometric style at 24×24 px viewBox. Icons use stroke-based or filled paths in black and should be rendered alongside the block name.</p>
+<h3 id="icon-catalog">Icon Catalog</h3>
+<h4 id="presentation-monitor">Presentation — Monitor</h4>
+<p>A screen with a stand, representing dashboards and user interfaces. Style: Geometric / Line.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Presentation icon — transparent" src="../images/naf-icon-presentation-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Presentation icon — colored" src="../images/naf-icon-presentation-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="observability-search-inspect">Observability — Search / Inspect</h4>
+<p>A magnifying glass representing monitoring, inspection, and data discovery. Style: Geometric / Line.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Observability icon — transparent" src="../images/naf-icon-observability-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Observability icon — colored" src="../images/naf-icon-observability-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="orchestration-grid-flow">Orchestration — Grid Flow</h4>
+<p>A 2×2 grid of rounded squares connected by lines, representing workflow coordination. Style: Filled / Bold.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Orchestration icon — transparent" src="../images/naf-icon-orchestration-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Orchestration icon — colored" src="../images/naf-icon-orchestration-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="intent-diamond-prism">Intent — Diamond / Prism</h4>
+<p>A layered diamond shape representing structured intent definitions and source of truth. Style: Geometric / Line.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Intent icon — transparent" src="../images/naf-icon-intent-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Intent icon — colored" src="../images/naf-icon-intent-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="collector-upward-chevrons">Collector — Upward Chevrons</h4>
+<p>Three stacked upward-pointing chevrons at increasing opacity, representing data being pulled up from infrastructure. Style: Filled.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Collector icon — transparent" src="../images/naf-icon-collector-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Collector icon — colored" src="../images/naf-icon-collector-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="executor-downward-chevrons">Executor — Downward Chevrons</h4>
+<p>Three stacked downward-pointing chevrons at increasing opacity, representing configuration being pushed down to infrastructure. Style: Filled.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Executor icon — transparent" src="../images/naf-icon-executor-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Executor icon — colored" src="../images/naf-icon-executor-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<h4 id="infrastructure-network-mesh">Infrastructure — Network Mesh</h4>
+<p>A central node connected to four corner nodes, representing the network fabric. Style: Geometric / Line.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Transparent</th>
+<th style="text-align: center;">Colored</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><img alt="Infrastructure icon — transparent" src="../images/naf-icon-infrastructure-transparent.png" /></td>
+<td style="text-align: center;"><img alt="Infrastructure icon — colored" src="../images/naf-icon-infrastructure-colored.png" /></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-layout-structure">5. Layout Structure</h2>
+<p>The diagram follows a layered architecture read top-to-bottom:</p>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────┐
+│               PRESENTATION                   │  ← Full width
+└─────────────────────────────────────────────┘
+      │                │                │
+┌───────────┐  ┌───────────────┐  ┌───────────┐
+│OBSERVABILITY│  │ ORCHESTRATION │  │   INTENT  │  ← Three equal columns
+└───────────┘  └───────────────┘  └───────────┘
+      │           ╱         ╲           │
+   ┌──────────┐              ┌──────────┐
+   │ COLLECTOR │              │ EXECUTOR │         ← Narrower, centered
+   └──────────┘              └──────────┘
+      │                              │
+┌─────────────────────────────────────────────┐
+│              INFRASTRUCTURE                  │  ← Full width
+└─────────────────────────────────────────────┘
+</code></pre></div>
+<h3 id="layer-mapping">Layer Mapping</h3>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Blocks</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User Interface</td>
+<td>Presentation</td>
+<td>How humans and systems interact with the framework</td>
+</tr>
+<tr>
+<td>Logic</td>
+<td>Observability, Orchestration, Intent</td>
+<td>Core automation logic — read, coordinate, write</td>
+</tr>
+<tr>
+<td>Transport</td>
+<td>Collector, Executor</td>
+<td>Read from and write to infrastructure</td>
+</tr>
+<tr>
+<td>Resources</td>
+<td>Infrastructure</td>
+<td>Physical and virtual network/compute resources</td>
+</tr>
+</tbody>
+</table>
+<h3 id="read-write-symmetry">Read / Write Symmetry</h3>
+<p>The left side of the diagram represents the <strong>read path</strong> (Observability → Collector → Infrastructure) and the right side represents the <strong>write path</strong> (Intent → Executor → Infrastructure). Orchestration sits in the center, coordinating both sides.</p>
+<hr />
+<h2 id="6-sub-block-content">6. Sub-block Content</h2>
+<p>Each logic-layer block contains internal sub-labels:</p>
+<table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Sub-blocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observability</td>
+<td>Observed State · Data Normalization / Observed Logic &amp; Analytics</td>
+</tr>
+<tr>
+<td>Orchestration</td>
+<td>Events · Workflows / Rollback · Scheduling</td>
+</tr>
+<tr>
+<td>Intent</td>
+<td>Intended State (SoT) / Intended Logic &amp; Validation</td>
+</tr>
+<tr>
+<td>Collector</td>
+<td>Read Operations / ▲ READ FROM INFRASTRUCTURE</td>
+</tr>
+<tr>
+<td>Executor</td>
+<td>Write Operations · Idempotent · Dry-Run / ▼ WRITE TO INFRASTRUCTURE</td>
+</tr>
+<tr>
+<td>Presentation</td>
+<td>Dashboards · CLI · ITSM Integration · API Gateway · ChatOps</td>
+</tr>
+<tr>
+<td>Infrastructure</td>
+<td>Routers · Switches · Firewalls · Load Balancers · SD-WAN · Cloud Fabric · Compute · DPU</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-typography">7. Typography</h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Font</th>
+<th>Size</th>
+<th>Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diagram title</td>
+<td>Inter (fallback: Helvetica Neue, Arial)</td>
+<td>20 px</td>
+<td>700 (Bold)</td>
+</tr>
+<tr>
+<td>Subtitle</td>
+<td>Inter</td>
+<td>10 px</td>
+<td>400</td>
+</tr>
+<tr>
+<td>Block title</td>
+<td>Inter</td>
+<td>15–17 px</td>
+<td>700 (Bold)</td>
+</tr>
+<tr>
+<td>Sub-label</td>
+<td>Inter</td>
+<td>10 px</td>
+<td>500 (Medium)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-prompt-regenerate-full-naf-architecture-diagram">8. Prompt — Regenerate Full NAF Architecture Diagram</h2>
+<p>Copy the prompt below into any LLM that can generate SVG to produce a NAF diagram matching these brand guidelines.</p>
+<hr />
+<h3 id="prompt-start">PROMPT START</h3>
+<div class="highlight"><pre><span></span><code>Generate an SVG diagram (viewBox 0 0 900 600) for the Network Automation Framework (NAF) reference architecture. Use font-family &quot;Inter, Helvetica Neue, Arial, sans-serif&quot; throughout.
+
+BACKGROUND: Use a solid rectangle fill. Use #000000 for dark variant or #FFFFFF for light variant.
+
+TITLE: Centered at top. &quot;Network Automation Framework&quot; in 20px bold. Below it, &quot;REFERENCE ARCHITECTURE&quot; in 10px uppercase with letter-spacing 2. On dark background use white (#F8FAFC) title and gray (#64748B) subtitle. On white background use dark (#1E293B) title and light gray (#94A3B8) subtitle.
+
+LAYOUT — 4 horizontal layers, top to bottom:
+
+LAYER 1 — PRESENTATION (full width, ~790px wide, height 72px, rounded corners rx=14):
+- Color: #f5c518 (NAF Yellow)
+- Icon: Monitor — a rectangle screen (stroke, no fill) with a stand line below it, placed to the left of the title
+- Title: &quot;PRESENTATION&quot; in 17px bold black
+- Sub-text: &quot;Dashboards · CLI · ITSM Integration · API Gateway · ChatOps&quot; in 10px, black at 60% opacity
+
+LAYER 2 — Three equal-width blocks side by side (each ~250px wide, height 145px, rx=14), with 20px gaps:
+
+Left block — OBSERVABILITY:
+- Color: #00e676 (Vivid Green)
+- Icon: Magnifying glass (circle + angled line, stroke only), placed inline left of title
+- Title: &quot;OBSERVABILITY&quot; in 15px bold black
+- Two sub-boxes (rx=8, fill #00000015, stroke #00000020):
+  - &quot;Observed State · Data Normalization&quot;
+  - &quot;Observed Logic &amp; Analytics&quot;
+
+Center block — ORCHESTRATION:
+- Color: #00d4ff (Electric Cyan)
+- Icon: 2×2 grid of rounded squares connected by lines (filled), placed inline left of title
+- Title: &quot;ORCHESTRATION&quot; in 15px bold black
+- Four sub-boxes in a 2×2 grid:
+  - Top row: &quot;Events&quot; | &quot;Workflows&quot;
+  - Bottom row: &quot;Rollback&quot; | &quot;Scheduling&quot;
+
+Right block — INTENT:
+- Color: #ff6d2e (Hot Orange)
+- Icon: Layered diamond/prism shape (stroke, dashed lower layer), placed inline left of title
+- Title: &quot;INTENT&quot; in 15px bold black
+- Two sub-boxes:
+  - &quot;Intended State (SoT)&quot;
+  - &quot;Intended Logic &amp; Validation&quot;
+
+Add subtle horizontal connector lines between adjacent middle blocks (double lines, semi-transparent).
+
+LAYER 3 — Two narrower blocks (~310px each, height 90px, rx=14), centered under their parent:
+
+Left — COLLECTOR:
+- Color: #F43F5E (Rose Red)
+- Icon: Three stacked upward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
+- Title: &quot;COLLECTOR&quot; in 15px bold black
+- Sub-text: &quot;Read Operations&quot; and &quot;▲ READ FROM INFRASTRUCTURE&quot; in 10px
+
+Right — EXECUTOR:
+- Color: #6366F1 (Indigo)
+- Icon: Three stacked downward chevrons at increasing opacity (0.4, 0.7, 1.0), filled black
+- Title: &quot;EXECUTOR&quot; in 15px bold black
+- Sub-text: &quot;Write Operations · Idempotent · Dry-Run&quot; and &quot;▼ WRITE TO INFRASTRUCTURE&quot; in 10px
+
+LAYER 4 — INFRASTRUCTURE (full width, ~790px, height 72px, rx=14):
+- Color: #64748b (Slate Gray)
+- Icon: Network mesh — central circle connected to 4 corner circles by lines (stroke white), placed to the left of the title
+- Title: &quot;INFRASTRUCTURE&quot; in 17px bold white
+- Sub-text: &quot;Routers · Switches · Firewalls · Load Balancers · SD-WAN · Cloud Fabric · Compute · DPU&quot; in 10px, #94A3B8
+
+CONNECTORS: Add subtle flow lines between layers using each block&#39;s color at 40% opacity. Dashed lines from Orchestration to Collector and Executor. Solid lines from Observability down to Collector and Intent down to Executor.
+
+SHADOW: Apply a subtle drop shadow (dy=4, stdDeviation=6, flood-color #00000018) to all blocks.
+
+Ensure all icons sit inline to the LEFT of their block title text, both vertically centered within the title area. Icons should not overlap with text.
+</code></pre></div>
+<h3 id="prompt-end">PROMPT END</h3>
+<hr />
+<h2 id="9-prompt-generate-individual-icon-svgs">9. Prompt — Generate Individual Icon SVGs</h2>
+<p>Use this prompt to generate standalone icon files for each building block.</p>
+<h3 id="prompt-start_1">PROMPT START</h3>
+<div class="highlight"><pre><span></span><code>Generate 14 individual SVG icon files for the NAF (Network Automation Framework) building blocks. Each icon should use a 24×24 viewBox. Create two versions of each icon:
+
+TRANSPARENT BACKGROUND VERSION:
+- No background rectangle
+- Icon strokes/fills in black (#000000)
+- Suitable for use on any background
+
+COLORED BACKGROUND VERSION:
+- Rounded rectangle background (rx=6) filling the full viewBox, using the block&#39;s brand color
+- Icon strokes/fills in black (#000000)
+- Suitable for standalone use as app icons or badges
+
+Here are the 7 icons and their colors:
+
+1. PRESENTATION (color: #f5c518)
+   Monitor icon: &lt;rect x=&quot;2&quot; y=&quot;3&quot; width=&quot;20&quot; height=&quot;14&quot; rx=&quot;2&quot;/&gt; with stand lines from center bottom to a horizontal base line. Stroke-based, no fill.
+
+2. OBSERVABILITY (color: #00e676)
+   Search icon: &lt;circle cx=&quot;11&quot; cy=&quot;11&quot; r=&quot;8&quot;/&gt; with a diagonal line from (16.65,16.65) to (21,21). Stroke-based, no fill.
+
+3. ORCHESTRATION (color: #00d4ff)
+   Grid flow icon: Four 6×6 rounded squares at positions (4,4), (14,4), (4,14), (14,14) with rx=2. The bottom-right square is fully opaque, others at 0.5. Connecting lines between them. Filled style.
+
+4. INTENT (color: #ff6d2e)
+   Diamond/prism icon: A closed diamond path &quot;M12 3L2 9l10 6 10-6-10-6z&quot; with a dashed lower layer &quot;M2 15l10 6 10-6&quot;. Stroke-based, no fill.
+
+5. COLLECTOR (color: #F43F5E)
+   Upward chevrons: Three &quot;V&quot; shapes pointing up — &quot;M5 10l7-7 7 7&quot; at opacity 0.4, &quot;M5 14l7-7 7 7&quot; at 0.7, &quot;M5 18l7-7 7 7&quot; at 1.0. Filled black.
+
+6. EXECUTOR (color: #6366F1)
+   Downward chevrons: Three inverted &quot;V&quot; shapes pointing down — &quot;M5 6l7 7 7-7&quot; at opacity 0.4, &quot;M5 10l7 7 7-7&quot; at 0.7, &quot;M5 14l7 7 7-7&quot; at 1.0. Filled black.
+
+7. INFRASTRUCTURE (color: #64748b)
+   Network mesh: Central circle (cx=12, cy=12, r=3), four corner circles at (5,5), (19,5), (5,19), (19,19) each r=2, connected to center by lines. Stroke-based white (#FFFFFF) for colored version, black for transparent version.
+</code></pre></div>
+<h3 id="prompt-end_1">PROMPT END</h3>
+<hr />
+<h2 id="10-file-inventory">10. File Inventory</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>naf-automation-framework-v1-dark.svg</code> / <code>.png</code></td>
+<td>Full architecture diagram — dark background</td>
+</tr>
+<tr>
+<td><code>naf-automation-framework-v1-white.svg</code> / <code>.png</code></td>
+<td>Full architecture diagram — white background</td>
+</tr>
+<tr>
+<td><code>naf-automation-framework-v1-minimal-dark.svg</code> / <code>.png</code></td>
+<td>Minimal architecture diagram — dark background</td>
+</tr>
+<tr>
+<td><code>naf-automation-framework-v1-minimal-white.svg</code> / <code>.png</code></td>
+<td>Minimal architecture diagram — white background</td>
+</tr>
+<tr>
+<td><code>naf-icon-{block}-transparent.svg</code> / <code>.png</code></td>
+<td>Individual icon, transparent background (×7)</td>
+</tr>
+<tr>
+<td><code>naf-icon-{block}-colored.svg</code> / <code>.png</code></td>
+<td>Individual icon, colored background (×7)</td>
+</tr>
+<tr>
+<td><code>naf-project-icon.svg</code> / <code>.png</code> (64–1024)</td>
+<td>Project icon in multiple sizes</td>
+</tr>
+<tr>
+<td><code>naf-sticker.svg</code> / <code>.png</code> (512, 1024)</td>
+<td>NAF sticker artwork</td>
+</tr>
+<tr>
+<td><code>naf-brand-guidelines.md</code></td>
+<td>This document</td>
+</tr>
+<tr>
+<td><code>naf-brand-guidelines.pdf</code></td>
+<td>PDF version of this document</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tracking"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../optionalConfig.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mermaid@11.5.0/dist/mermaid.min.js"></script>
+      
+        <script src="../../extra-loader.js"></script>
+      
+    
+  </body>
+</html>
