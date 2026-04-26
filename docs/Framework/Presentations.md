@@ -2,11 +2,7 @@
 
 Public talks about the NAF Framework. Slides are either stored directly in this repository or linked externally; videos link to the event's recording when available.
 
-<!-- Talks are listed newest-first, grouped by year.
-     When you add a new year, place its section above the existing ones. -->
-
-
-
+<!-- Talks are listed newest-first by date. -->
 
 | Date | Event | Title | Presenter(s) | Links |
 | --- | --- | --- | --- | --- |
@@ -19,7 +15,7 @@ Public talks about the NAF Framework. Slides are either stored directly in this 
 ## How to add a talk
 
 1. If you have a slide deck to host in the repo, drop the file into `docs/Framework/presentations/` using the naming convention `event-year-slug.{pdf,pptx}` (e.g. `autocon3-2025-naf-stack.pdf`). External links are also fine — no file needed.
-2. Add a row to the table under the correct year heading. Create a new year section if needed and place it above the existing ones.
+2. Add a row to the table, keeping the list ordered newest-first by date.
 3. Required fields: **Date**, **Event**, **Title**, **Presenter(s)**. Omit any optional Links field that does not apply.
 4. Open a pull request.
 
