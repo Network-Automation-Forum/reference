@@ -80,6 +80,10 @@ The proposed reference architecture defines six major functional building blocks
 
 The NAF Framework has a defined visual identity including a color palette, iconography, and layout guidelines for each building block. For full details on colors, typography, icon specifications, and diagram generation prompts, see the [Brand Guidelines](brand-guidelines.md).
 
+## Presentations about the Framework
+
+See [Presentations](Presentations.md) for a list of public talks about the NAF Framework, including slides and video recordings where available.
+
 ## Contributors
 
 - Christian Adell
