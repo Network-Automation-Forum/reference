@@ -10,10 +10,10 @@ Public talks about the NAF Framework. Slides are either stored directly in this 
 
 | Date | Event | Title | Presenter(s) | Links |
 | --- | --- | --- | --- | --- |
-| 2026-04 | ITNOG 10, Bologna | The Network Automation Map | Christian Adell, Damien Garros | [PDF](presentations/ITNOG10%20-%20The%20Network%20Automation%20Map.pdf) · [PPTX](presentations/ITNOG10%20-%20The%20Network%20Automation%20Map.pptx) |
-| 2026-04 | ESNOG 35, Madrid | NAF Framework | Pete Crocker | [PDF](presentations/ESNOG35%20-%20NAF%20Framework%202026-04.pdf) · [PPTX](presentations/ESNOG35%20-%20NAF%20Framework%202026-04.pptx) |
-| 2026-02 | NANOG 96, San Francisco | The Network Automation Map | Wim Henderickx, Damien Garros | [PDF](presentations/NANOG96%20-%20The%20Network%20Automation%20Map.pdf) · [PPTX](presentations/NANOG96%20-%20The%20Network%20Automation%20Map.pptx) · [Video](https://www.youtube.com/watch?v=MCeDVWOrnIs) |
-| 2025-11 | AUTOCON 4, Austin | NAF Framework | Dinesh Dutt, Ryan Shaw | [PDF](presentations/AC4%20Framework%20Slide.pdf) · [PPTX](presentations/AC4%20Framework%20Slide.pptx) · [Video](https://youtu.be/i1eve1uB-Rs?si=kj1BK8LqAOjSH9ym) |
+| 2026-04 | ITNOG 10, Bologna | The Network Automation Map | Christian Adell, Damien Garros | [PDF](presentations/itnog10-2026-network-automation-map.pdf) · [PPTX](presentations/itnog10-2026-network-automation-map.pptx) |
+| 2026-04 | ESNOG 35, Madrid | NAF Framework | Pete Crocker | [PDF](presentations/esnog35-2026-naf-framework.pdf) · [PPTX](presentations/esnog35-2026-naf-framework.pptx) |
+| 2026-02 | NANOG 96, San Francisco | The Network Automation Map | Wim Henderickx, Damien Garros | [PDF](presentations/nanog96-2026-network-automation-map.pdf) · [PPTX](presentations/nanog96-2026-network-automation-map.pptx) · [Video](https://www.youtube.com/watch?v=MCeDVWOrnIs) |
+| 2025-11 | AUTOCON 4, Austin | NAF Framework | Dinesh Dutt, Ryan Shaw | [PDF](presentations/autocon4-2025-naf-framework.pdf) · [PPTX](presentations/autocon4-2025-naf-framework.pptx) · [Video](https://youtu.be/i1eve1uB-Rs?si=kj1BK8LqAOjSH9ym) |
 
 
 ## How to add a talk
