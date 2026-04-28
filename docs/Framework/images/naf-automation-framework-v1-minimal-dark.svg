@@ -12,7 +12,7 @@
   <text x="450" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#F8FAFC" letter-spacing="0.5">Network Automation Framework</text>
   <text x="450" y="58" text-anchor="middle" font-size="10" fill="#64748B" letter-spacing="2">REFERENCE ARCHITECTURE</text>
 
-  <!-- === PRESENTATION — #f5c518 NAF Yellow === -->
+  <!-- === PRESENTATION — #f5c518 Golden Yellow === -->
   <rect x="55" y="78" width="790" height="72" rx="14" fill="#f5c518" filter="url(#s2shadow)"/>
   <!-- Icon: monitor/screen -->
   <g transform="translate(436,88) scale(1.167)">

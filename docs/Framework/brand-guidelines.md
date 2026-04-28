@@ -28,14 +28,38 @@ Two diagram styles are available: the **full** variant with detailed sub-labels 
 
 ---
 
-## 3. Color Palette
+## 3. Logo & Sticker
+
+The NAF Framework wordmark is provided in two variants. The sticker artwork pairs the wordmark with the seven-block color stack and is intended for swag, slide credits, and badge layouts.
+
+### Wordmark — Dark Variant
+
+For use on dark backgrounds.
+
+![NAF Framework wordmark — dark](images/naf-framework-icon-dark.png)
+
+### Wordmark — Transparent Variant
+
+For use on light or custom backgrounds.
+
+![NAF Framework wordmark — transparent](images/naf-framework-icon-transparent.png)
+
+### Sticker
+
+Horizontal sticker artwork combining the seven-block color stack with the NAF Framework wordmark.
+
+![NAF Framework sticker](images/sticker-naf-framework-side-v2.png)
+
+---
+
+## 4. Color Palette
 
 
 Each building block has a dedicated color. All seven blocks use distinct hues for maximum differentiation across contexts.
 
 | Building Block | Color Name | Hex | RGB | Usage Notes |
 |---|---|---|---|---|
-| **Presentation** | NAF Yellow | `#f5c518` | 245, 197, 24 | Top-level layer. |
+| **Presentation** | Golden Yellow | `#f5c518` | 245, 197, 24 | Top-level layer. |
 | **Observability** | Vivid Green | `#00e676` | 0, 230, 118 | Read-side logic. |
 | **Orchestration** | Electric Cyan | `#00d4ff` | 0, 212, 255 | Central coordination. |
 | **Intent** | Hot Orange | `#ff6d2e` | 255, 109, 46 | Write-side logic. |
@@ -63,7 +87,7 @@ All block titles and sub-labels use **black** (`#000000`) text at varying opacit
 
 ---
 
-## 4. Iconography
+## 5. Iconography
 
 Each building block has a dedicated icon drawn in a consistent geometric style at 24×24 px viewBox. Icons use stroke-based or filled paths in black and should be rendered alongside the block name.
 
@@ -127,7 +151,7 @@ A central node connected to four corner nodes, representing the network fabric. 
 
 ---
 
-## 5. Layout Structure
+## 6. Layout Structure
 
 The diagram follows a layered architecture read top-to-bottom:
 
@@ -164,7 +188,7 @@ The left side of the diagram represents the **read path** (Observability → Col
 
 ---
 
-## 6. Sub-block Content
+## 7. Sub-block Content
 
 Each logic-layer block contains internal sub-labels:
 
@@ -180,7 +204,7 @@ Each logic-layer block contains internal sub-labels:
 
 ---
 
-## 7. Typography
+## 8. Typography
 
 | Element | Font | Size | Weight |
 |---|---|---|---|
@@ -191,7 +215,7 @@ Each logic-layer block contains internal sub-labels:
 
 ---
 
-## 8. Prompt — Regenerate Full NAF Architecture Diagram
+## 9. Prompt — Regenerate Full NAF Architecture Diagram
 
 Copy the prompt below into any LLM that can generate SVG to produce a NAF diagram matching these brand guidelines.
 
@@ -209,7 +233,7 @@ TITLE: Centered at top. "Network Automation Framework" in 20px bold. Below it, "
 LAYOUT — 4 horizontal layers, top to bottom:
 
 LAYER 1 — PRESENTATION (full width, ~790px wide, height 72px, rounded corners rx=14):
-- Color: #f5c518 (NAF Yellow)
+- Color: #f5c518 (Golden Yellow)
 - Icon: Monitor — a rectangle screen (stroke, no fill) with a stand line below it, placed to the left of the title
 - Title: "PRESENTATION" in 17px bold black
 - Sub-text: "Dashboards · CLI · ITSM Integration · API Gateway · ChatOps" in 10px, black at 60% opacity
@@ -273,7 +297,7 @@ Ensure all icons sit inline to the LEFT of their block title text, both vertical
 
 ---
 
-## 9. Prompt — Generate Individual Icon SVGs
+## 10. Prompt — Generate Individual Icon SVGs
 
 Use this prompt to generate standalone icon files for each building block.
 
@@ -320,7 +344,7 @@ Here are the 7 icons and their colors:
 
 ---
 
-## 10. File Inventory
+## 11. File Inventory
 
 | File | Description |
 |---|---|
@@ -328,9 +352,11 @@ Here are the 7 icons and their colors:
 | `naf-automation-framework-v1-white.svg` / `.png` | Full architecture diagram — white background |
 | `naf-automation-framework-v1-minimal-dark.svg` / `.png` | Minimal architecture diagram — dark background |
 | `naf-automation-framework-v1-minimal-white.svg` / `.png` | Minimal architecture diagram — white background |
+| `naf-framework-icon-dark.png` | NAF Framework wordmark — dark background |
+| `naf-framework-icon-transparent.png` | NAF Framework wordmark — transparent background |
+| `sticker-naf-framework-side-v2.png` | NAF Framework horizontal sticker artwork |
 | `naf-icon-{block}-transparent.svg` / `.png` | Individual icon, transparent background (×7) |
 | `naf-icon-{block}-colored.svg` / `.png` | Individual icon, colored background (×7) |
 | `naf-project-icon.svg` / `.png` (64–1024) | Project icon in multiple sizes |
-| `naf-sticker.svg` / `.png` (512, 1024) | NAF sticker artwork |
 | `naf-brand-guidelines.md` | This document |
 | `naf-brand-guidelines.pdf` | PDF version of this document |
