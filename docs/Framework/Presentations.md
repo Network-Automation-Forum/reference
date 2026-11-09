@@ -9,6 +9,7 @@ Public talks and podcast appearances about the NAF Framework. Slide decks are ei
 | Date | Event | Title | Presenter(s) | Links |
 | --- | --- | --- | --- | --- |
 | 2026-09 | NLNAM 3, Netherlands | The NAF Framework — a shared view for network automation | Bart Dorlandt | [Slides](https://github.com/bartdorlandt/NAF-framework-a-shared-view/blob/main/presentation/NAF_framework_a-shared-view_lightning.pdf) |
+| 2026-04 | SwiNOG 41, Berne | The Network Automation Map | Damien Garros | [Slides](https://www.swinog.ch/wp-content/uploads/2026/05/Damien_Garros-OpsMill-Network_Automation_Map_and_NAF_Framework.pdf) · [Video](https://www.youtube.com/watch?v=WpTHsS_HWbY) |
 | 2026-04 | ITNOG 10, Bologna | The Network Automation Map | Christian Adell, Damien Garros | [PDF](presentations/itnog10-2026-network-automation-map.pdf) · [PPTX](presentations/itnog10-2026-network-automation-map.pptx) |
 | 2026-04 | ESNOG 35, Madrid | NAF Framework | Pete Crocker | [PDF](presentations/esnog35-2026-naf-framework.pdf) · [PPTX](presentations/esnog35-2026-naf-framework.pptx) |
 | 2026-02 | NANOG 96, San Francisco | The Network Automation Map | Wim Henderickx, Damien Garros | [PDF](presentations/nanog96-2026-network-automation-map.pdf) · [PPTX](presentations/nanog96-2026-network-automation-map.pptx) · [Video](https://www.youtube.com/watch?v=MCeDVWOrnIs) |
@@ -18,6 +19,7 @@ Public talks and podcast appearances about the NAF Framework. Slide decks are ei
 
 | Date | Podcast | Episode | Guest(s) | Link |
 | --- | --- | --- | --- | --- |
+| 2026-08 | Between 0x2 Nerds | A Deeper Look at the Network Automation Format | Wim Hendrickx | [Listen](https://www.youtube.com/watch?v=kGB3mHhJw0Q) |
 | 2026-04 | Total Network Operations (Packet Pushers) | TNO060 — Think Like an Architect | Damien Garros | [Listen](https://packetpushers.net/podcasts/total-network-operations/tno060-think-like-an-architect/) |
 | 2026-04 | Between 0x2 Nerds | Network Automation Framework with Dinesh Dutt | Dinesh Dutt | [Listen](https://youtu.be/0ZfcibsVHFg?si=Kqj_ITj5Bczzc0q3) |
 
