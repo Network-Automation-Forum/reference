@@ -25,6 +25,7 @@ extra:
 extra_css:
   - stylesheets/extra.css
 markdown_extensions:
+  - attr_list
   - pymdownx.superfences:
       preserve_tabs: true
       custom_fences:

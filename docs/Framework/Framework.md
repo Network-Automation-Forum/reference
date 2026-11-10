@@ -29,11 +29,11 @@ The proposed reference architecture defines six major functional building blocks
 
 ## <img src="../images/naf-icon-intent-colored.png" width="28"> Intent
 
-- It MUST be capable of representing, in a structured form, any network-related aspect. This broad scope includes, but is not limited to, data such as IP addressing, data center infrastructure (e.g., racks, cabling), routing protocols, virtualized services, secrets, operational levels (such as maximum CPU), configuration templates or data mappings, and artifacts, as well as service abstraction or policy definitions. 
-- The data MUST support create, read, update, and delete operations. 
+- It MUST be capable of representing, in a structured form, any network-related aspect. This broad scope includes, but is not limited to, data such as IP addressing, data center infrastructure (e.g., racks, cabling), routing protocols, virtualized services, secrets, operational levels (such as maximum CPU), configuration templates or data mappings, and artifacts, as well as service abstraction or policy definitions.
+- The data MUST support create, read, update, and delete operations.
 - Access to this information MUST be exposed through a standardized, well-documented Application Programming Interface (API) (e.g., REST, GraphQL, etc.).
 - The modeling SHOULD use a neutral representation that will be derived into vendor-specific configuration artifacts.
-- It SHOULD provide a consistent and unified view of the desired state, even when the data is distributed across multiple data sources. 
+- It SHOULD provide a consistent and unified view of the desired state, even when the data is distributed across multiple data sources.
 - In addition to the core network data, it SHOULD include metadata that supports effective data governance, such as timestamps, data origin, data ownership, and valid periods.
 - Ideally, these operations SHOULD be transactional, offer custom validation, and provide a versioned access to data.
 - It MAY include all the logic related to intended state management, such as data validation, data aggregation or replication, breaking down abstract services into concrete objects, and combining data to generate configuration artifacts.
@@ -83,6 +83,10 @@ The NAF Framework has a defined visual identity including a color palette, icono
 ## Presentations & Podcasts
 
 See [Presentations & Podcasts](Presentations.md) for a list of public talks and podcast appearances about the NAF Framework, including slides and recordings where available.
+
+## Tools
+
+See [Tools](Tools.md) for a list of public tools to use for and around the Network Automation Framework.
 
 ## Contributors
 
