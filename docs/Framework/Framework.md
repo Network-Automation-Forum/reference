@@ -49,7 +49,7 @@ The proposed reference architecture defines six major functional building blocks
 
 ## <img src="../images/naf-icon-collector-colored.png" width="28"> Collector
 
-- It MUST includes capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
+- It MUST include capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
 - The data values SHOULD be normalized from different vendors and method specifics.
 
 ## <img src="../images/naf-icon-observability-colored.png" width="28"> Observability
