@@ -22,7 +22,7 @@ The proposed reference architecture defines six major functional building blocks
 
 - <img src="../images/naf-icon-intent-colored.png" width="24"> **Intent**: Defines the logic to handle and the persistence layer to store the desired state of the network, including both configuration and operational expectations.
 - <img src="../images/naf-icon-observability-colored.png" width="24"> **Observability**: It persists the actual network state, and defines the logic to process it.
-- <img src="../images/naf-icon-orchestration-colored.png" width="24"> **Orchestrator**: Defines how the automation tasks are coordinated and executed in response to events.
+- <img src="../images/naf-icon-orchestration-colored.png" width="24"> **Orchestration**: Defines how the automation tasks are coordinated and executed in response to events.
 - <img src="../images/naf-icon-executor-colored.png" width="24"> **Executor**: Encompasses the actual tasks applied to the network to drive changes (e.g., updating configuration) as guided by the intended state.
 - <img src="../images/naf-icon-collector-colored.png" width="24"> **Collector**: In contrast to Executor, this component focuses on retrieving (i.e., reading) the actual state of the network.
 - <img src="../images/naf-icon-presentation-colored.png" width="24"> **Presentation**: Provides the interfaces through which users interact with the system, including dashboards, graphical user interfaces (e.g., ITSM), and CLI tools.
@@ -49,7 +49,7 @@ The proposed reference architecture defines six major functional building blocks
 
 ## <img src="../images/naf-icon-collector-colored.png" width="28"> Collector
 
-- It MUST includes capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
+- It MUST include capabilities for retrieving live data from the network using read interfaces—similar to the Executor component—but extends support to additional protocols to capture metrics and log, such as SNMP, Syslog, and other data such as flow-based telemetry (e.g., NetFlow, sFlow), packet capturing, traces, and others.
 - The data values SHOULD be normalized from different vendors and method specifics.
 
 ## <img src="../images/naf-icon-observability-colored.png" width="28"> Observability
@@ -59,7 +59,7 @@ The proposed reference architecture defines six major functional building blocks
 - It SHOULD expose relevant insights into the current network state and automatically generate events when discrepancies are detected between the actual state (configuration or operational) and the intended state. These events MAY be processed by humans or connected to the Orchestration block to be automatically processed.
 - Retrieved data MAY be enriched with contextual information from the intended state, including other third-party sources (e.g., EoL information, CVEs, maintenance notifications, etc.), enhancing analysis and enabling more accurate data correlation.
 
-## <img src="../images/naf-icon-orchestration-colored.png" width="28"> Orchestrator
+## <img src="../images/naf-icon-orchestration-colored.png" width="28"> Orchestration
 
 - It MUST enable the coordination and integration of processes across the various building blocks, allowing the creation of more sophisticated and end-to-end automation workflows. It doesn't directly interact with the network infrastructure.
 - Process execution SHOULD follow an event-driven approach, where events can be received synchronously, asynchronously, or generated on a scheduled basis.
